@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 1</title>
+    <link rel="stylesheet" href="./scss/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>VS Code Hotkeys</h1>
+        <nav class="menu">
+            <div class="menu__header">
+                <div class="menu__toggle">Menu</div>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item menu__item-basic">
+                    <a href="#" class="menu__link" data-target="key-combination__basic">Basic</a>
+                </li>
+                <li class="menu__item menu__item-edit">
+                    <a href="#" class="menu__link" data-target="key-combination__edit">Edit</a>
+                </li>
+                <li class="menu__item menu__item-navigation">
+                    <a href="#" class="menu__link" data-target="key-combination__navigation">Navigation</a>
+                </li>
+                <li class="menu__item menu__item-search">
+                    <a href="#" class="menu__link" data-target="key-combination__search">Search and replace</a>
+                </li>
+                <li class="menu__item menu__item-cursor">
+                    <a href="#" class="menu__link" data-target="key-combination__cursor">Cursor and highlighting</a>
+                </li>
+                <li class="menu__item menu__item-languages">
+                    <a href="#" class="menu__link" data-target="key-combination__languages">Languages</a>
+                </li>
+                <li class="menu__item menu__item-editor">
+                    <a href="#" class="menu__link" data-target="key-combination__editor">Editor and tabs</a>
+                </li>
+                <li class="menu__item menu__item-files">
+                    <a href="#" class="menu__link" data-target="key-combination__files">Files</a>
+                </li>
+                <li class="menu__item menu__item-viewing">
+                    <a href="#" class="menu__link" data-target="key-combination__viewing">Viewing</a>
+                </li>
+                <li class="menu__item menu__item-debugging">
+                    <a href="#" class="menu__link" data-target="key-combination__debugging">Debugging</a>
+                </li>
+                <li class="menu__item menu__item-terminal">
+                    <a href="#" class="menu__link" data-target="key-combination__terminal">Terminal</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="key-combination">
+            <div id="key-combination__basic" class="key-combination__section">
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>F1</span> - Показати палітру команд</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift p</span> - Показати палітру команд</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl p</span> - Швидке відкриття, перейти до файлу...</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift n</span> - Нове вікно / екземпляр</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift w</span> - Закрити вікно / екземпляр</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl ,</span> - Параметри (Користувацькі налаштування)</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k ctrl s</span> - Гарячі клавіші (керування)</p>
+                    </div>
+                </div>
+            </div>
+            <div id="key-combination__edit" class="key-combination__section">
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl x</span> - Вирізати рядок (порожнє виділення)</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl c</span> - Копіювати рядок (порожнє виділення)</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl &#8593;</span> - Перемістити рядок вгору</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl &#8595;</span> - Перемістити рядок донизу</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>alt shift &#8593;</span> - Копіювати рядок вгору</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>alt shift &#8595;</span> - Копіювати рядок вниз</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl alt k</span> - Видалити рядок</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl enter</span> - Додати новий рядок нижче</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift enter</span> - Додати новий рядок вище</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift \</span> - Перейти до відповідної дужки</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl [</span> - Зменшити відступ</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl ]</span> - Збільшити відступ</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>home</span> - Перейти на початок рядка</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>end</span> - Перейти в кінець рядка</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl home</span> - Перейти до початку файлу</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl end</span> - Перейти до кінця файлу</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl &#8593;</span> - Прокручування рядка вгору</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl &#8595;</span> - Прокручування рядка вниз</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>alt page up</span> - Прокручування сторінки вгору</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>alt page down</span> - Прокручування сторінки вниз</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift [</span> - Згорнути фрагмент коду</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift ]</span> - Розгорнути фрагмент коду</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k shift [</span> - Згорнути рекурсивно</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k shift ]</span> - Розгорнути рекурсивно</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k shift 0</span> - Згорнути все</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k shift j</span> - Розгорнути все</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k shift c</span> - Встановити рядковий коментар</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k shift u</span> - Зняти рядковий коментар</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl /</span> - Встановити/зняти рядковий коментар</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>alt shift a</span> - Встановити/зняти блоковий коментар</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>alt z</span> - Увімкнути/вимкнути перенесення рядків</p>
+                    </div>
+                </div>
+            </div>
+            <div id="key-combination__navigation" class="key-combination__section">
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl t</span> - Показати всі символи</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl g</span> - Перейти до рядка...</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl p</span> - Перейти до файлу...</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift o</span> - Перейти до символу...</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift m</span> - Показати панель проблем</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>f8</span> - Перейти до наступної помилки або попередження</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>shift f8</span> - Перейти до попередньої помилки або попередження</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift tab</span> - Навігація по історії вкладок редактора</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>alt &#8594;</span> - Перейти вперед</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>alt &#8592;</span> - Перейти назад</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl m</span> - Перемикання клавіші TAB переміщує фокус</p>
+                    </div>
+                </div>
+            </div>
+            <div id="key-combination__search" class="key-combination__section">
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl f</span> - Пошук</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl h</span> - Замінити</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>f3</span> - Знайти наступний</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>shift f3</span> - Знайти попередній</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>alt enter</span> - Виділити всі входження під час пошуку</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl d</span> - Додати виділення в наступний знайдений збіг</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k ctrl d</span> - Перемістити останнє виділення в наступний знайдений збіг</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>alt c</span> - Увімкнути або вимкнути пошук з урахуванням регістру</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>alt r</span> - Увімкнути або вимкнути пошук з використанням регулярних виразів</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>alt w</span> - Увімкнути або вимкнути пошук тільки цілих слів</p>
+                    </div>
+                </div>
+            </div>
+            <div id="key-combination__cursor" class="key-combination__section">
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>alt click</span> - Додати курсор</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl alt &#8593;</span> - Додати курсор вище</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl alt &#8595;</span> - Додати курсор нижче</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl u</span> - Скасувати останню дію курсору</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>alt shift i</span> - Додати курсор у кінець кожного виділеного рядка</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl l</span> - Виділити поточний рядок</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift l</span> - Виділити всі входження поточного виділення</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl f2</span> - Виділити всі входження поточного слова</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>alt shift &#8594;</span> - Розширити виділення</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>alt shift &#8592;</span> - Стиснути виділення</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>alt shift drag mouse</span> - Виділення за стовпчиками</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl alt shift arrow</span> - Виділення за стовпчиками</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl alt shift page up</span> - Виділення за стовпцями, сторінка вгору</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl alt shift page down</span> - Виділення за стовпцями, сторінка вниз</p>
+                    </div>
+                </div>
+            </div>
+            <div id="key-combination__languages" class="key-combination__section">
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl space</span> - Переключити пропозицію</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl i</span> - Переключити пропозицію</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift space</span> - Переключити підказки до параметрів</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>alt shift f</span> - Форматувати документ</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k ctrl f</span> - Форматувати виділений фрагмент</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>f12</span> - Перейти до визначення</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>alt f12</span> - Показати визначення</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k f12</span> - Відкрити визначення збоку</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl .</span> - Швидке виправлення...</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>shift f2</span> - Перейти до посилань</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>f2</span> - Перейменувати символ</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k ctrl x</span> - Видалити кінцеві символи-роздільники</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctr k m</span> - Змінити мовний режим</p>
+                    </div>
+                </div>
+            </div>
+            <div id="key-combination__editor" class="key-combination__section">
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl f4</span> - Закрити редактор</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl w</span> - Закрити редактор</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k f</span> - Закрити робочу область</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl \</span> - Розділити редактор</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl 1..3</span> - Фокус на першу/другу/третю область редактора</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k ctrl &#8594;</span> - Перевести фокус на наступну область редактора</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k ctrl &#8592;</span> - Перевести фокус на попередню область редактора</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift page up</span> - Перемістити вкладку лівіше</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift page down</span> - Перемістити вкладку правіше</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k &#8594;</span> - Перемістити вкладку в наступну область</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k &#8592;</span> - Перемістити вкладку в попередню область</p>
+                    </div>
+                </div>
+            </div>
+            <div id="key-combination__files" class="key-combination__section">
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl n</span> - Новий файл</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl o</span> - Відкрити файл</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl s</span> - Зберегти</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift s</span> - Зберегти як...</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k s</span> - Зберегти все</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl f4</span> - Закрити</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k ctrl w</span> - Закрити все</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift t</span> - Відкрити закритий редактор</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k enter</span> - Зберегти редактор</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl tab</span> - Швидко відкрити раніше використовуваний редактор</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift tab</span> - Швидко відкрити редактор, який використовувався найдавніше</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k p</span> - Копіювати шлях активного файлу</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k r</span> - Відкрити активний файл у провіднику</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k os</span> - Відкрити активний файл у новому вікні</p>
+                    </div>
+                </div>
+            </div>
+            <div id="key-combination__viewing" class="key-combination__section">
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>f11</span> - Повноекранний режим</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>alt shift 0</span> - Переключити розташування вікон редактора</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl =</span> - Збільшити</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl -</span> - Зменшити</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl b</span> - Змінити видимість бічної панелі</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift e</span> - Показати провідник</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift f</span> - Показати Пошук</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift g</span> - Показати Система керування версіями</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift d</span> - Показати Запуск і налагодження</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift x</span> - Показати Розширення</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift h</span> - Замінити у файлах</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift j</span> - Деталі заміни у файлах</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift u</span> - Змінити видимість панелі виведення</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift v</span> - Markdown прев'ю</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k v</span> - Markdown прев'ю і розділити редактор</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k z</span> - Увімкнути/вимкнути режим "Дзен"</p>
+                    </div>
+                </div>
+            </div>
+            <div id="key-combination__debugging" class="key-combination__section">
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>f9</span> - Переключити точку зупинки</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>f5</span> - Почати/продовжити налагодження</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>shift f5</span> - Зупинити налагодження</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>f11</span> - Крок із заходом</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>shift f11</span> - Крок із виходом</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>f10</span> - Крок з обходом</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl k i</span> - Показати під час наведення</p>
+                    </div>
+                </div>
+            </div>
+            <div id="key-combination__terminal" class="key-combination__section">
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl `</span> - Показати вбудований термінал</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl shift `</span> - Створити новий термінал</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl c</span> - Скопіювати виділення</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl v</span> - Вставити в активний термінал</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl &#8593;</span> - Прокрутити вгору</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl &#8595;</span> - Прокрутити вниз</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>shift page up</span> - Прокрутити на одну сторінку вгору</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>shift page down</span> - Прокрутити на одну сторінку вниз</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl home</span> - Прокрутити на початок</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+
+                    <div class="key-combination__text">
+                        <p><span>ctrl end</span> - Прокрутити в кінець</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
