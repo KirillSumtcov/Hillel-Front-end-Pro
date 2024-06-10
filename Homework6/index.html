@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 6</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Замикання, коллбеки, функцій вищого порядку та IIFE</h1>
+        <nav class="menu">
+            <div class="menu__header">
+                <div class="menu__toggle">Menu</div>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item menu__item-callback">
+                    <a href="#" class="menu__link" data-target="key-combination__callback">Функція-колбек: Основи та Асинхронність</a>
+                </li>
+                <li class="menu__item menu__item-higher">
+                    <a href="#" class="menu__link" data-target="key-combination__higher">Функція вищого порядку</a>
+                </li>
+                <li class="menu__item menu__item-iife">
+                    <a href="#" class="menu__link" data-target="key-combination__iife">Функція, що самовикликаеться (IIFE)</a>
+                </li>
+                <li class="menu__item menu__item-clean">
+                    <a href="#" class="menu__link" data-target="key-combination__clean">Чисті функції</a>
+                </li>
+                <li class="menu__item menu__item-currying">
+                    <a href="#" class="menu__link" data-target="key-combination__currying">Каррінг</a>
+                </li>
+                <li class="menu__item menu__item-homework">
+                    <a href="#" class="menu__link" data-target="key-combination__homework">Задачі</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="key-combination">
+            <div id="key-combination__callback" class="key-combination__section">
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>функціями зворотного виклику або просто колбеками.</span> - це функція, яка передається як аргумент іншій функції і викликається після завершення певної асинхронної операції.</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Function Expression або Стрілкової функції</span> - Функції оголошені всередині виклику дозволяють структурувати код та здійснювати динамічні виклики.</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Синхронне виконання</span> - Синхронний код виконується послідовно, рядок за рядком, і кожна операція повинна завершитися перед тим, як наступна почне виконуватись. Якщо певна операція займає тривалий час, наприклад, обробка великого масиву або очікування відповіді від сервера, весь інший код буде блокуватись і чекати на завершення цієї операції.</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Асинхронне виконання</span> - Асинхронний код дозволяє програмі виконувати інші завдання, поки очікується завершення тривалої операції. Це досягається за допомогою колбеків, промісів або асинхронних функцій. Операції, що займають тривалий час, наприклад, зчитування даних з сервера або виконання анімацій, можуть бути виконані асинхронно, що дозволяє іншим частинам коду продовжувати виконання.</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Асинхронні колбеки</span> - це функції, які визначаються як аргументи під час виклику функції, що почне виконання коду на задньому фоні. Коли код на задньому фоні завершує свою роботу, він викликає колбек-функцію, яка сповіщає, що робота зроблена, або сповіщає про труднощі в завершенні роботи. Зворотні виклики - трохи застаріла практика, але вони все ще вживаються в деяких старомодних, але часто використовуваних API, тому слід використовувати інші підходи, такі як проміси та async/await, для полегшення роботи з асинхронним кодом.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="key-combination__higher" class="key-combination__section">
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Higher-order function</span> - це функції, які приймають одну або декілька інших функцій як аргументи і/або повертають функції як результат своєї роботи. Функції вищого порядку є потужним інструментом в функціональному програмуванні і в JavaScript загалом, оскільки вони дозволяють створювати більш абстрактний та зрозумілий код.</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Прийом функцій як аргументів</span> - Функція вищого порядку може приймати інші функції як параметри. Це дозволяє передавати логіку обробки даних в якості аргументу.</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Повернення функцій</span> - Функція вищого порядку може повертати іншу функцію як результат своєї роботи. Це дозволяє створювати інші функції "на льоту" залежно від умов або потреби.</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Маніпуляція функціями</span> - Функції вищого порядку можуть виконувати різні операції з функціями, такі як композиція, каррінг, фільтрація, мапування тощо.</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Абстракція</span> - Вони дозволяють абстрагуватися від конкретних операцій та дій, що роблять функції більш універсальними та повторно використовуваними.</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Підвищення зрозумілості коду</span> - Використання функцій вищого порядку може покращити зрозумілість та читабельність коду, оскільки вони дозволяють виразити логіку більш декларативним способом.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="key-combination__iife" class="key-combination__section">
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>IIFE (Immediately Invoked Function Expression)</span> - це JavaScript функція, яка виконується відразу ж після того, як її було визначено.</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Створення приватних областей видимості</span> - Однією з ключових переваг IIFE є їх здатність створювати приватні області видимості для змінних. Це означає, що змінні, оголошені всередині IIFE, недоступні ззовні і не конфліктують з іншими змінними в глобальному контексті.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="key-combination__clean" class="key-combination__section">
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Чисті функції</span> - Використовуючи чисті функції, можна забезпечити більшу стабільність, легкість розуміння і підтримки коду, що робить їх важливою концепцією в розробці програмного забезпечення.</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Детермінованість</span> - Чиста функція завжди повертає однаковий результат для однакових вхідних даних. Немає впливу зовнішнього стану або змінних.</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Без побічних ефектів</span> - Це означає, що чиста функція не змінює стану програми і не виконує операцій, які впливають на зовнішнє середовище. Вона лише обчислює результат і повертає його.</p>
+                    </div>
+                </div>  
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Без побічних ефектів вводу-виводу</span> - Чисті функції не залежать від зовнішніх джерел даних, таких як файли, мережа або консольний вивід.</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Незалежність від порядку</span> - Результат виконання чистої функції не залежить від порядку виклику функцій або інших операцій у програмі.</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Чудова тестируваність</span> - Чисті функції легше тестувати, оскільки їх результати передбачувані та не залежать від зовнішніх умов.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="key-combination__currying" class="key-combination__section">
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Каррінг</span> - це трансформація функцій таким чином, щоб вони приймали аргументи не як f(a, b, c), а як f(a)(b)(c). У JavaScript реалізація зазвичай дозволяє викликати функцію обома варіантами: або нормально, або повертає частково застосовану функцію, якщо недостатня кількість аргументів.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="key-combination__homework" class="key-combination__section">
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Замикання</span> - Написати функцію, яка приймає 1 параметр. Та скадає значення з тим, що передали перший раз і т. д. Все це із замиканнями, наприклад:
+                            <br>console.log(sum(4)); // 4                            
+                            <br>console.log(sum(6)); // 10                            
+                            <br>console.log(sum(10)); // 20                            
+                            <br>console.log(sum(7)); // 27</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Добуток через карування</span> - Створити функцію для розрахунку добутку двох чисел, що викликається так: name(5)(2). Функція повинна повертати результат (у середині функції не має бути консоль лога!)</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Функція з циклом</span> - Цикл на кожній ітерації пропонує через prompt ввести число більше 100 (але максимум 10 ітерацій циклу) . Якщо відвідувач ввів число менше ста – попросити ввести ще раз, і таке інше. Якщо користувач вводить більше ста, текст або цикл закінчує всі ітерації, то функція виводить в консоль останній введення користувача і завершує функцію.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/homework.js"></script>
+</body>
+
+</html>
