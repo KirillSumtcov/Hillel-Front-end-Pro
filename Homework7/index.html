@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 7</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Стрілкові функції</h1>
+        <nav class="menu">
+            <div class="menu__header">
+                <div class="menu__toggle">Menu</div>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item menu__item-arrow">
+                    <a href="#" class="menu__link" data-target="key-combination__arrow">Стрілкові функції</a>
+                </li>
+                <li class="menu__item menu__item-context">
+                    <a href="#" class="menu__link" data-target="key-combination__context">Контекст виклику в JavaScript</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="key-combination">
+            <div id="key-combination__arrow" class="key-combination__section">
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Синтаксис</span> - це так звані “стрілкові функції”, а виглядають вони ось так:</p>
+                    </div>
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Функція має лише один аргумент</span> - Якщо функція має лише один аргумент, тоді дужки навколо параметрів можна опускати, що дозволить записати її ще коротше.</p>
+                    </div>
+                    <img src="img/2.jpg" alt="">
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Немає аргументів</span> - Якщо аргументів немає, то дужки порожні, але вони повинні бути:</p>
+                    </div>
+                    <img src="img/3.jpg" alt="">
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Багаторядкові стрілкові функції</span> - Іноді, нам потрібно дещо складніше, наприклад, декілька виразів чи інструкцій. Це також можливо, але ми повинні записати їх у фігурних дужках і використати return, як у звичайних функціях.</p>
+                    </div>
+                    <img src="img/4.jpg" alt="">
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Не мають “this”</span> - Стрілкові функції особливі: у них немає “свого” this. Якщо ми посилаємось на this з такої функції, його значення береться із зовнішньої “нормальної” функції.</p>
+                    </div>
+                    <img src="img/5.jpg" alt="">
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Не можна використовувати з new</span> - Відсутність this призводить до ще одного обмеження: стрілкові функції не можуть бути використані як конструктори. Їх не можна викликати з new.</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Не мають “arguments”</span> - У стрілкових функціях неможливо використовувати об'єкт arguments. Цей об'єкт містить всі передані параметри функції, і його використання може бути корисним в деяких сценаріях.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="key-combination__context" class="key-combination__section">
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>“this” в методах</span> - Для доступу до інформації всередині об’єкта метод може використовувати ключове слово this.</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>“this” не є фіксованим</span> - Значення this обчислюється під час виконання і залежить від контексту.</p>
+                    </div>
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Глобальний контекст виклику</span> - Все, що визначено за межами будь-якої функції чи блока коду, належить глобальному контексту виклику. У глобальному контексті this посилається на глобальний об'єкт window в браузері або на глобальний об'єкт global в середовищі Node.js.</p>
+                    </div>
+                    <img src="img/6.jpg" alt="">
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Контекст виклику функції</span> - Кожна функція в JavaScript має свій власний контекст виклику, який визначається тим, як вона була викликана.</p>
+                    </div>
+                    <img src="img/7.jpg" alt="">
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Зміна контексту виклику</span> - Змінити контекст виклику можна за допомогою методів call(), apply(), або bind().</p>
+                    </div>
+                    <img src="img/8.jpg" alt="">
+                </div>
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <p><span>Контекст виклику при обробці подій</span> - При обробці подій контекст виклику може змінюватись в залежності від того, як викликано функцію.</p>
+                    </div>
+                    <img src="img/9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/homework.js"></script>
+</body>
+
+</html>
