@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 9</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>DOM та Events</h1>
+        <nav class="menu">
+            <div class="menu__header">
+                <div class="menu__toggle">Menu</div>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item menu__item-pifagor">
+                    <a href="#" class="menu__link" data-target="key-combination__pifagor">Таблиця піфагора</a>
+                </li>
+                <li class="menu__item menu__item-color">
+                    <a href="#" class="menu__link" data-target="key-combination__color">Кнопка зміни кольору</a>
+                </li>
+                <li class="menu__item menu__item-random">
+                    <a href="#" class="menu__link" data-target="key-combination__random">Отримання випадкового зображення</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="key-combination">
+            <div id="key-combination__pifagor" class="key-combination__section">
+                <div class="key-combination__content">
+                    <div class="key-combination__text">
+                        <div class="pifagor"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="key-combination__color" class="key-combination__section">
+                <div class="key-combination__content">
+                    <div class="key-combination__text" id="textBlock">
+                        <p><span>classList</span> - це спеціальний об’єкт, який містить методи для додавання, видалення або перемикання окремого класу.</p>
+                    </div>
+                    <button id="key-combination-btn">Кнопка зміни кольору</button>
+                </div>
+            </div>
+            <div id="key-combination__random" class="key-combination__section">
+                <div class="key-combination__content">
+                    <img src="./img/1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/homework.js"></script>
+</body>
+
+</html>

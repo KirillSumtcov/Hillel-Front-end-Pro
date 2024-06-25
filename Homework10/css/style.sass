@@ -1,0 +1,134 @@
+*  
+    box-sizing: border-box 
+body  
+    margin: 0 
+    font-family: "Poppins", sans-serif 
+    width: 100% 
+    height: auto 
+img
+    max-width: 100%
+    margin: 0 auto
+ul  
+    list-style: none 
+    padding: 0 
+a
+    display: block
+    text-decoration: none
+    height: 100%
+h1  
+    text-align: center 
+
+ 
+
+.container
+    max-width: 1024px 
+    margin: 0 auto 
+.menu
+    padding: 0 12px
+    &__header
+        display: none
+        @media screen and (max-width: 634px)
+            display: block
+            width: 300px 
+            margin: 0 auto
+            background: #00105fbb
+            border-radius: 10px 
+            cursor: pointer 
+            transition: all .3s ease-in
+            &:hover
+                background: #00105f
+    &__toggle
+        color: #fff 
+        font-weight: 600 
+        font-size: 20px 
+        padding: 10px
+.menu__list  
+    display: flex 
+    justify-content: center 
+    align-items: stretch 
+    flex-wrap: wrap 
+    gap: 20px
+    @media screen and (max-width: 768px)
+        gap: 10px
+        @media screen and (max-width: 634px)
+            display: none
+@media screen and (max-width: 634px)
+    .menu__list.active
+        display: flex                
+.menu__item
+    width: 300px 
+    background: #00105fbb
+    border-radius: 10px 
+    cursor: pointer 
+    transition: all .3s ease-in
+    &:hover
+        background: #00105f
+.menu__link  
+    color: #fff 
+    font-weight: 600 
+    font-size: 20px 
+    padding: 10px
+.key-combination 
+    padding: 0 12px
+    margin-bottom: 20px
+    &__content
+        img
+            border-radius: 10px
+    @media screen and (max-width: 634px)
+        margin-top: 20px
+    &__section
+        display: none
+        padding: 10px 20px
+        @media screen and (max-width: 480px)
+            padding: 10px
+    .active
+        display: block
+        background-color: #fafafa
+        border: 1px solid #ccc
+        border-radius: 10px
+        transition: all 2s ease-in
+    &__text
+        p
+            font-size: 18px
+            font-weight: normal
+            line-height: 1.4
+            @media screen and (max-width: 480px)
+                font-size: 16px
+        span
+            font-size: 16px
+            text-transform: uppercase
+            padding: 5px
+            background: #F6D55C
+            border-radius: 5px
+            @media screen and (max-width: 480px)
+                font-size: 14px
+
+// ________________________________Homework style #1
+.pifagor
+    max-width: 768px
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-bottom: 20px
+    &__row
+        display: flex
+        &:first-child
+            background: #F6D55C
+    &__cell
+        border: 1px solid #000
+        padding: 8px
+        width: 40px
+        text-align: center
+        &:nth-child(1)
+            background: #F6D55C
+
+// ________________________________Homework style #2
+
+.key-combination
+    &__text
+        &--red
+            color: red
+
+// ________________________________Homework style #3
