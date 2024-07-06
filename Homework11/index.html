@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="UK">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 11</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Лекція №12. Об'єкт Event, Фази подій, Делегування. BOM.</h1>
+        <nav class="menu">
+            <div class="menu__header">
+                <div class="menu__toggle">Menu</div>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item menu__item-homework">
+                    <a href="#" class="menu__link" data-target="key-combination__homework">Homework 12.1</a>
+                </li>
+                <li class="menu__item menu__item-homework2">
+                    <a href="#" class="menu__link" data-target="key-combination__homework2">Homework 12.2</a>
+                </li>
+                <li class="menu__item menu__item-homework3">
+                    <a href="#" class="menu__link" data-target="key-combination__homework3">Homework 12.3</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="key-combination">
+            <div id="key-combination__homework" class="key-combination__section">
+                <div class="key-combination__content">
+                    <form>
+                        <input class="key-combination__btn js-btn1" type="button" value="Ваше посилання">
+                        <input class="key-combination__btn js-btn2" type="button" value="Переадресація за вашим посиланням">
+                    </form>
+                </div>
+            </div>
+            <div id="key-combination__homework2" class="key-combination__section">
+                <div class="key-combination__content">
+                    <form class="key-combination__buttons">
+                        <input class="key-combination__btn key-combination__btn1" type="button" value="Кнопка 1">
+                        <input class="key-combination__btn key-combination__btn2" type="button" value="Кнопка 2">
+                        <input class="key-combination__btn key-combination__btn3" type="button" value="Кнопка 3">
+                    </form>
+                </div>
+            </div>
+            <div id="key-combination__homework3" class="key-combination__section">
+                <ul class="todo-list">
+                </ul>
+                <input class="todo-list__input" type="text" placeholder="Додати нове завдання">
+                <button class="todo-list__btn">Додати</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/homework.js"></script>
+</body>
+
+</html>
