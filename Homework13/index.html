@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="UK">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 13</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Лекція №13. Форми та регулярні вирази</h1>
+        <nav class="menu">
+            <div class="menu__header">
+                <div class="menu__toggle">Menu</div>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item menu__item-homework">
+                    <a href="#" class="menu__link" data-target="key-combination__homework">Homework 13.1</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="key-combination">
+            <div id="key-combination__homework" class="key-combination__section">
+                <div class="form">
+                    <h2>We would like to help you</h2>
+                    <form class="js-form" action="" method="">
+                        <div class="form__info">
+                            <input type="text" name="name" placeholder="Name" />
+                            <div id="nameError" class="form__error"></div>
+                        </div>
+                        <div class="form__info">
+                            <textarea name="message" placeholder="Message:"></textarea>
+                            <div id="messageError" class="form__error"></div>
+                        </div>
+                        <div class="form__text">
+                            <h3>How to answer you?</h3>
+                        </div>
+                        <div class="form__info">
+                            <input type="tel" name="tel" placeholder="Phone number"/>
+                            <div id="phoneError" class="form__error"></div>
+                        </div>
+                        <div class="form__info">
+                            <input type="email" name="email" placeholder="Email"/>
+                            <div id="emailError" class="form__error"></div>
+                        </div>
+                        <button class="form__btn" type="submit">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/homework.js"></script>
+</body>
+
+</html>

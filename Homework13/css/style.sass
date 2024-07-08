@@ -1,0 +1,163 @@
+*
+    box-sizing: border-box
+body
+    margin: 0
+    font-family: "Poppins", sans-serif
+    width: 100%
+    height: auto
+img
+    max-width: 100%
+    margin: 0 auto
+ul
+    list-style: none
+    padding: 0
+a
+    display: block
+    text-decoration: none
+    height: 100%
+h1
+    text-align: center
+
+.container
+    max-width: 1024px
+    margin: 0 auto
+.menu
+    padding: 0 12px
+    &__header
+        display: none
+        @media screen and (max-width: 634px)
+            display: block
+            width: 300px
+            margin: 0 auto
+            background: #00105fbb
+            border: 1px solid #00105fbb
+            border-radius: 10px
+            cursor: pointer
+            transition: all .3s ease-in
+            &:hover
+                background: #fff
+    &__toggle
+        color: #fff
+        font-weight: 600
+        font-size: 20px
+        padding: 10px
+        transition: all .3s ease-in
+        &:hover
+            color: #000
+.menu__list
+    display: flex
+    justify-content: center
+    align-items: stretch
+    flex-wrap: wrap
+    gap: 20px
+    @media screen and (max-width: 768px)
+        gap: 10px
+        @media screen and (max-width: 634px)
+            display: none
+@media screen and (max-width: 634px)
+    .menu__list.active
+        display: flex
+.menu__item
+    width: 300px
+    background: #00105fbb
+    border: 1px solid #00105fbb
+    border-radius: 10px
+    cursor: pointer
+    transition: all .3s ease-in
+    &:hover
+        background: #fff
+.menu__link
+    color: #fff
+    font-weight: 600
+    font-size: 20px
+    padding: 10px
+    transition: all .3s ease-in
+    &:hover
+        color: #000
+.key-combination
+    padding: 0 12px
+    margin-bottom: 20px
+    &__content
+        img
+            border-radius: 10px
+    @media screen and (max-width: 634px)
+        margin-top: 20px
+    &__section
+        display: none
+        padding: 10px 20px
+        @media screen and (max-width: 480px)
+            padding: 10px
+    .active
+        display: block
+        background-color: #fafafa
+        border: 1px solid #ccc
+        border-radius: 10px
+        transition: all 2s ease-in
+    &__text
+        p
+            font-size: 18px
+            font-weight: normal
+            line-height: 1.4
+            @media screen and (max-width: 480px)
+                font-size: 16px
+        span
+            font-size: 16px
+            text-transform: uppercase
+            padding: 5px
+            background: #F6D55C
+            border-radius: 5px
+            @media screen and (max-width: 480px)
+                font-size: 14px
+
+// ________________________________Homework style #1
+
+.form
+    width: 50%
+    padding: 20px
+    margin: 20px auto
+    border-radius: 6px
+    background: #f1f1f1
+    @media screen and (max-width: 630px)
+        width: 100%
+    h2 
+        color: red
+    h3
+        text-align: left
+        color: #c1c1c1
+    &__info
+        padding-bottom: 10px
+        input, textarea
+            width: 100%
+            padding: 10px
+            margin-bottom: 10px
+            border-radius: 6px
+            border: none
+            outline: none
+            transition: all 0.2s ease-in
+        .is-invalid
+            border: 1px solid red 
+        .is-valid
+            border: 1px solid #16d116
+    &__error
+        color: red
+    &__text
+    &__btn
+        max-width: 200px
+        width: 100%
+        margin: 0 auto
+        padding: 10px 0
+        border-radius: 6px
+        color: #fff
+        border: 1px solid #70B0E0
+        background: #70B0E0
+        transition: all 0.1s ease-in
+        cursor: pointer
+        &:active
+            background: #fff
+            color: #000
+.js-form
+    display: flex
+    flex-direction: column
+
+
+
