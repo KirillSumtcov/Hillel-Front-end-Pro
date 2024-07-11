@@ -1,0 +1,177 @@
+*
+    box-sizing: border-box
+body
+    margin: 0
+    font-family: "Poppins", sans-serif
+    width: 100%
+    height: auto
+img
+    max-width: 100%
+    margin: 0 auto
+ul
+    list-style: none
+    padding: 0
+a
+    display: block
+    text-decoration: none
+    height: 100%
+h1
+    text-align: center
+
+.container
+    max-width: 1024px
+    margin: 0 auto
+.menu
+    padding: 0 12px
+    &__header
+        display: none
+        @media screen and (max-width: 634px)
+            display: block
+            width: 300px
+            margin: 0 auto
+            background: #00105fbb
+            border: 1px solid #00105fbb
+            border-radius: 10px
+            cursor: pointer
+            transition: all .3s ease-in
+            &:hover
+                background: #fff
+    &__toggle
+        color: #fff
+        font-weight: 600
+        font-size: 20px
+        padding: 10px
+        transition: all .3s ease-in
+        &:hover
+            color: #000
+.menu__list
+    display: flex
+    justify-content: center
+    align-items: stretch
+    flex-wrap: wrap
+    gap: 20px
+    @media screen and (max-width: 768px)
+        gap: 10px
+        @media screen and (max-width: 634px)
+            display: none
+@media screen and (max-width: 634px)
+    .menu__list.active
+        display: flex
+.menu__item
+    width: 300px
+    background: #00105fbb
+    border: 1px solid #00105fbb
+    border-radius: 10px
+    cursor: pointer
+    transition: all .3s ease-in
+    &:hover
+        background: #fff
+.menu__link
+    color: #fff
+    font-weight: 600
+    font-size: 20px
+    padding: 10px
+    transition: all .3s ease-in
+    &:hover
+        color: #000
+.key-combination
+    padding: 0 12px
+    margin-bottom: 20px
+    &__content
+        img
+            border-radius: 10px
+    @media screen and (max-width: 634px)
+        margin-top: 20px
+    &__section
+        display: none
+        padding: 10px 20px
+        @media screen and (max-width: 480px)
+            padding: 10px
+    .active
+        display: block
+        background-color: #fafafa
+        border: 1px solid #ccc
+        border-radius: 10px
+        transition: all 2s ease-in
+    &__text
+        p
+            font-size: 18px
+            font-weight: normal
+            line-height: 1.4
+            @media screen and (max-width: 480px)
+                font-size: 16px
+        span
+            font-size: 16px
+            text-transform: uppercase
+            padding: 5px
+            background: #F6D55C
+            border-radius: 5px
+            @media screen and (max-width: 480px)
+                font-size: 14px
+
+// ________________________________Homework style #1
+
+.slider
+    position: relative
+    width: 100%
+    overflow: hidden
+    &__content
+        display: flex
+        transition: transform 0.5s ease-in-out
+    &__product
+        min-width: 100%
+        box-sizing: border-box
+        padding: 0 50px
+        cursor: grab
+    &__product-video
+        width: 100%
+        height: -webkit-fill-available
+    &__arrow-next,
+    &__arrow-prev
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        cursor: pointer
+    &__arrow-prev
+        left: 0
+    &__arrow-next
+        right: 0
+    &__arrow-circle
+        position: relative
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        background: #00000050
+        &--prev
+            &::after
+                content: '<'
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                color: #fff
+                font-size: 30px
+        &--next
+            &::after
+                content: '>'
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                color: #fff
+                font-size: 30px
+    &__pagination
+        display: flex
+        justify-content: center
+        gap: 10px
+    &__pagination-circle
+        cursor: pointer
+        width: 14px
+        height: 14px
+        border-radius: 50%
+        background: #cfcfcc
+        &--active
+            width: 13px
+            height: 13px
+            background: #414141
+            border: 1px solid #fff
