@@ -24,7 +24,7 @@ function renderWeatherInfo(city) {
             </div>
             <div class="weather-widget__item">
                 <div class="weather-widget__image">
-                    <img src="../img/${city.weather[0].icon}.png" alt="">
+                    <img src="img/${city.weather[0].icon}.png" alt="">
                     <span> ${city.weather[0].main} - ${city.clouds.all}%</span>
                 </div>
             </div>
