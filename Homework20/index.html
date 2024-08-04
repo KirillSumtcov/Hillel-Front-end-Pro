@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лекція №20. Бібліотеки та npm</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+    <div class="container-xxl">
+        <h1 class="pt-4 mb-4">TODO з Jquery та Bootstrap</h1>
+        <form class="form container-md d-flex mb-4 gap-3">
+            <input type="text" name="value" required class="form-control form__input" id="exampleFormControlInput1" placeholder="Назва задачі">
+            <button type="submit" value="Submit" class="btn btn-light js-btn-add">Додати</button>
+        </form>
+        <ul class="container-md list-group list-group-flush"></ul>
+        <div id="myModal" class="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Ваше завдання</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Текст завдання</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./js/homework.js" type="module"></script>
+</body>
+
+</html>
