@@ -1,1 +1,7 @@
 node_modules/
+
+css/style.css
+css/style.css.map
+css/style.min.css
+
+js/homework-compiled.js

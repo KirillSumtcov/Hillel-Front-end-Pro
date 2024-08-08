@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css": "sass css/style.scss css/style.css --watch"
+    "css": "sass css/style.scss css/style.css --watch",
+    "js:compile": "npx babel js/homework.js --out-file js/homework-compiled.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +14,10 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.8",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3"
   }
 }
